@@ -1,0 +1,472 @@
+#paletteColors {
+    color: #707c3e; /*medium olive green*/
+    color: #010101; /*black variant*/
+    color: #83908b; /*medium gray*/
+    color: #1d2b11; /*dark olive green*/
+    color: #fefefe; /*white variant*/
+    color: #d2dab6; /*links */
+    background: #bace67; /*home page background*/
+}
+
+* {
+    font-family: 'Bitter', serif;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.shadow {
+    text-shadow: 1px 1px 4px  #019650;
+}
+
+p {
+    text-indent: 50px;
+}
+
+p.first-letter::first-letter {
+    font-size: 150%;
+    color: black;
+}
+
+.centered {
+    text-align: center;
+}
+
+#index-main { /*used for ALL pages main element*/
+    position: relative;
+    margin-top: -20px;
+    /* background-image: url("assets/prop-photos/index-bg-image.jpg"); -> need a better background image?  */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    background: #bace67;
+}
+
+/* #index-main__top-left-div,
+#index-main__top-middle-div,
+#index-main__top-right-div,
+#index-main__bottom-left-div,
+#index-main__bottom-middle-div,
+#index-main__bottom-right-div {
+    border: 1px solid red;
+} */
+
+
+
+#index-main__text {
+    font-weight: bold;
+    text-align: center;
+    padding: 16px 0;
+}
+
+#index-main__video-container {
+    border: 35px ridge #1d2b11;
+    width: 100%;
+    height: 100%;
+    margin: auto auto 10px auto;
+    
+    /* min-width: 450px;
+    min-height: 350px; */
+}
+
+#index-main__video-container__video {
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    padding: 10px;
+
+}
+
+/* equal housing logo in header */
+.navbar-brand img {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: auto;
+    max-width: 150px;
+    max-height: 35px;
+    margin-top: -6px;
+}
+
+.navbar-default {
+    background: #1d2b11;
+}
+
+
+
+.navbar-default .navbar-nav>li>a {
+    color: #d2dab6;
+    font-size: 20px;
+    text-align: center;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: #707c3e;
+}
+
+.dropdown-menu {
+    color: #d2dab6;
+    background: #1d2b11;
+}
+
+.dropdown-menu>li>a {
+    color: #d2dab6;
+    background: #1d2b11;
+}
+
+.open .dropdown-menu>li>a:hover {
+    color: #707c3e;
+    background: #1d2b11;
+    }
+
+.navbar-default .navbar-nav>.open>a {
+    background: #1d2b11;
+}
+
+.dropdown-toggle .navbar-default .navbar-nav>.open>a {
+    background: #1d2b11;
+}
+
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:focus,
+.navbar-default .navbar-nav>.open>a:hover {
+        color: #707c3e;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu>li>a {
+    color: #d2dab6;
+    background: #1d2b11;
+    font-family: inherit;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
+    color: #707c3e;
+}
+
+#company-name__header {
+    color: #707c3e;
+}
+
+.small {
+    font-size: 12px;
+}
+
+.main-text {
+    position: relative;
+    color: white;
+    top: 40%;
+}
+
+#index-main__bottom-left-div__text {
+    padding: 0 15px;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    max-height: auto;
+    height: 100%;
+    background: #1d2b11;
+}
+
+footer img {
+    background-size: 200%;
+    background-repeat: no-repeat;
+    max-width: 200px;
+    width: auto; 
+} 
+
+footer .row > div {
+    padding: 20px;
+}
+
+.white-logo {
+    padding-left: 50px;
+}
+
+
+#equal-disclaimer {
+    width: 100%;
+    color: #83908b; /*medium gray*/
+    text-indent: 0px;
+}
+
+.footer-text ul li{
+    list-style-type: none;
+    padding: 10px;
+}
+
+.footer-text a,
+.residents-link {
+    color: #d2dab6;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: small;
+}
+
+.footer-text a:hover,
+.residents-link:hover {
+    color: #707c3e;
+    text-decoration: none;
+}
+
+.footer-text__header {
+    color: #707c3e;
+    font-weight: bold;
+    font-size: 150%;
+    text-align: center;
+}
+
+.copyright {
+    color: white;
+    font-size: 75%;
+}
+
+
+/*contact.html page specific css*/
+#contact-main__img {
+    position: relative;
+    margin-top: -20px;
+    background-image: url("assets/background-images/background3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+}
+
+.form-div__contact {
+    position: relative;
+    top: 0;
+    margin: 25px;
+}
+
+
+#current-user {
+    border-bottom: 1px solid;
+}
+
+
+.contact-current-row2 {
+    background: #1d2b11; /*dark olive green*/
+    color: white;
+}
+
+.img-row1,
+.img-row2,
+.img-row3 {
+    padding: 50px;
+    width: 100%;
+    /* max-height: 350px; */
+}
+
+.text-row1,
+.text-row1a,
+.text-row2,
+.text-row3 {
+    padding: 50px;
+    width: 50%;
+    max-width: 600px;
+    min-width: 400px;
+    color: #596332;
+}
+
+
+
+/* PHOTOS PAGE */
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    max-height: 350px;
+}
+
+#photos-main__carousel {
+    border: 35px ridge #1d2b11;
+    width: 100%;
+    height: 100%;
+    margin: auto auto 10px auto;
+}
+
+/* FLOOR PLAN PAGE */
+#floor-main__bottom-left-div,
+#floor-main__bottom-middle-div,
+#floor-main__bottom-right-div {
+    border: 25px ridge #1d2b11;
+    width: 100%;
+    height: 100%;
+    margin-left:  20px;
+    margin-bottom: 20px;
+    max-width: 425px;
+    height: 500px;
+}
+
+.floor-plan {
+    width: 100%;
+    height: 100%;
+}
+
+.floor-container {
+    width: 100%;
+}
+
+.floor-plan__price {
+    margin-top: -10%;
+}
+
+/* contacts pages */
+/* NEW RESIDENTS */
+
+#phone {
+    color: #83908b; /*medium gray*/
+}
+
+.contact-current-main__text {
+    border: 15px ridge #1d2b11;
+    margin: 10px auto;
+}
+
+.residents-link { /*more specific code from that above!!!*/
+    color: #1d2b11; /*dark olive green*/
+}
+
+#mapLocation-container {
+    margin: 75px 50px 25px 50px;
+    border: 10px solid #707c3e;;
+    padding: 10px;
+}
+
+#mapLocation {
+    width: 100%;
+    height: 400px;
+    border: 10px ridge #1d2b11;
+}
+
+.application-springfield {
+    width: 100%;
+    height: 700px;
+}
+
+#application-springfield__online,
+#application-springfield__print {
+    color: #1d2b11; /*dark olive green*/
+}
+
+#application-springfield__print:hover,
+#application-springfield__online:hover {
+    color: #707c3e;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#contact-address {
+    font-weight: bold;
+    color: #1d2b11; /*dark olive green*/ 
+}
+
+#contact-form,
+#contact-calculator,
+#calculator-image {
+    width: 100%;
+    border: 10px ridge #1d2b11;
+    padding: 5px;
+}
+
+#calculator-image {
+    margin-top: 5px;
+}
+
+#eligibility-container {
+    width: 100%;
+    height: 100px;
+}
+
+/* CURRENT RESIDENTS */
+#family-image {
+    width: 100%;
+}
+
+#contact-form label {
+    color: #1d2b11; /*dark olive green*/   
+}
+
+#contact-form input {
+    margin: 5px;
+    width: 75%;
+}
+
+textarea {
+    width: 75%;
+}
+
+.required,
+.red {
+    font-weight: bold;
+    color: red;
+}
+
+.green {
+    font-weight: bold;
+    color: green;
+}
+
+/* REQUESTS HTML PAGE */
+
+#requests-body {
+    background: #bace67; /*home page background*/
+}
+
+#requests-div {
+    width: 90%;
+    border: 15px ridge #1d2b11;
+    margin: 16px auto 16px auto;
+    height: 100%;
+    min-height: 400px;
+    padding: 10px;
+}
+
+#requests-div input {
+    width: 50%;
+}
+
+#repair-main__top-right-div {
+    border: 15px ridge #1d2b11;
+    margin: 10px auto 0;
+    width: 20%;
+    min-width: 155px;
+    max-Height: 185px;
+}
+
+#maintRepairImg {
+    width: 100%;
+    height: 100%;
+    max-height: 155px;
+    padding: 0;
+}
+
+#requests-div #emergency {
+    width: 100px;;
+    margin: auto auto auto 25px;;
+    }
+
+/* SECTION 8 HTML styles */
+#imperial-contact-div {
+    padding: 50px 10px;
+}
+
+
+
+
+
+
+
+/* copyright info 
+    found on bing.com - Free to share and use commercially filter*/
+
+/* current resident page = money.jpg = sb10063234l-001-56a6a56f5f9b58b7d0e4219d.jpg  bing.com 4/18/18 - lifewire.com 400 x 250 jpeg
+    current residet page = repair.jpg = Plumber-vector-3.jpg bing.com 4/18/28 - freedesignfile.com425 x 500 
+    future residents page = family.jpg = logo.jpg bing.com 4/20/18 -multiculturalliteraturenewswiki.wikispaces.com250 x 230 jpeg*/

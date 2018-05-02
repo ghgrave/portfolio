@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Maintenance Requests</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+         <!-- Latest jQuery -->
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+         <!-- latest jQuery UI -->
+         <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+ 
+         <!-- Latest compiled and minified CSS -->
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+ 
+         <!-- Optional theme -->
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+ 
+         <!-- Latest compiled and minified JavaScript -->
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+         
+         
+ 
+         <link rel="stylesheet" href="springfield.css">
+         <link href="https://fonts.googleapis.com/css?family=Bitter:400,400i,700" rel="stylesheet"> <!-- cutom Bitter font-->
+         <script src="springfield.js"></script>
+    </head>
+    <body id="requests-body">
+        <div class="container-fluid">
+            <!--[if lt IE 7]>
+                <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+            <![endif]-->
+
+            <nav>
+                <!-- do we need? -->
+            </nav>
+        
+            <div class="row">
+                <!-- <div class="col-lg-1 col-sm-12" id="index-main__top-left-div">
+                    <div>
+                        <!-- top left div -->
+                        <!-- text or log about apt? -->
+                    <!-- </div>
+                </div> -->
+                
+                <div class="col-lg-9 col-sm-12" id="index-main__top-middle-div">
+                    <div class="apt-address contact-current-main__text" id="index-main__text" >
+                        <h2 class="shadow"><b>Springfield Villas Apartment Community</b></h2>
+                        <h4>1300 Pancho Street   Lockhart, TX 78644</h4>
+                        <h4>512.398.3100</h4>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-12" id="repair-main__top-right-div">
+                        <div>
+                            <img src="assets/repair.jpg" alt="plumber" id="maintRepairImg"> 
+                            <!-- top right div -->
+                            <!-- text or log about apt? -->
+                        </div>
+                    </div> 
+                </div><!-- end first row -->
+       
+            <div class="row" id="requests-div">
+                <div class="col-sm-12" >
+                    <form action="mailto:sisaacs@springfieldvillas.net?subject=Repair Request" method="post" 
+                        enctype="text/plain" id="request-form" name="request-form">
+                        <fieldset>
+                            <legend>Fill out form to request maintenance service:</legend>
+                            <label for="maintName">Contact Name:</label>
+                            <br><input type="text" name="maintName" id="maintName">
+                            <br><label for="maintNum">Contact Number:</label>
+                            <br><input type="tel" name="maintName" id="maintName">
+                            <br><label for="maintEmail">Contact Email: </label>
+                            <br><input type="email" name="maintEmail" id="maintEmail">
+                            <br><label for="maintComments">Please be as specific as possible with your request:</label>
+                            <br><textarea name="maintComments" id="maintComments" cols="30" rows="10"></textarea>
+                            <br><button type="submit" class="btn btn-success">Submit</button>
+                            <button type="reset" class="btn btn-success">Reset</button>
+                            <input type="button" id="emergency" class="btn btn-danger" value="Emergency">
+
+
+                        </fieldset>
+
+                    </form>
+                </div>
+            </div>
+
+            <footer>
+                <div class="container-fluid">
+                    <div class="row">
+                    
+                        <div class="col-lg-6 col-md-6 col-sm-11 footer-text" id="footer__middle-div">
+                            <p class="text-uppercase footer-text__header">Menu</p>
+                            <ul class="list-inline">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="photos.html">Photos</a></li>
+                                <li><a href="floor.html">Floor Plans</a></li>
+                                <li><a href="current.html">Current Resident</a></li>
+                                <li><a href="prospect.html">Future Resident</a></li>
+                                <li><a href="sect-8.html">Imperial Gardens</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-5 col-md-6 col-sm-12" id="footer__right-div">
+                                <p class="small" id="equal-disclaimer">Springfield Villas, LP and Lockhart Springfield Villas, LP, follow Title VIII of the Civil Rights Act of 1968 
+                                    as amended by the Fair Housing Amendments Act of 1988, prohibiting discrimination in housing based on race, 
+                                    color, religion, sex, national origin, handicap, sexual preference or familial status. The Owner does not 
+                                    discriminate against persons with disabilities.
+                                <br><br><span class="copyright">Copyright &copy; 2011 Springfield Villas, L.P.. All rights reserved.</span>
+                                <br><span class="copyright">Copyright &copy; 2018 gHgrave Designs</span></p>
+                        </div>
+
+                        <div class="col-lg-1 col-md-1 col-sm-1" id="footer__left-div">
+                            <a><img src="assets/equal-housing-logo.jpg" alt="logo" id="white-logo"></a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
