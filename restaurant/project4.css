@@ -1,0 +1,182 @@
+/*color palette:
+	#958F94 - grey
+	#CC3366 - dark pink
+	#EE5428 - orange
+	#0099EE - Miami blue
+	#10253A - dark blue
+	#536b38 - olive green
+	#AA5511 - tan
+	#ffaaff - pink
+	#860352 - dark red
+*/
+
+header { /*background-color: #cc3366;*/
+	color: #CC3366;
+	border: 5px double #0ee8e6;
+	font-family: Verdana, sans-serif;
+	font-size: 150%;
+	text-align: center; 
+	text-shadow: 1px 1px 3px #0099EE;
+	margin: 0px 100px 10px 100px;
+	height: 450px;
+	background-image: url(images/dinerImage.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	border-radius: 90px 90px 0 0;
+	}
+	
+figure {
+	float: right;
+	}
+
+figure img {
+	width: 200px; 
+	height: 200px;
+	border: #0ee8e6 groove 5px;
+	background-size: 100% 100%;
+	}
+		
+figcaption {
+	font-size: 15px;
+	background-color: #958F94;
+	width: 210px;
+	}
+
+body {
+	background-color: #958f94;/*grey*/
+	background-image: linear-gradient (to bottom, #958f94, #0099ee);
+	background-repeat: no-repeat;
+
+	}
+	
+nav {
+	color: #cc3366;
+	width: 100%;
+	text-align: center;
+	position: relative;
+	margin-top: 20px;
+	}
+	 
+   
+nav a, #careerSubmit {
+	font-size: 175%;
+	font-weight: bold;
+	font-family: Verdana, sans-serif;
+	text-decoration: none;
+	color: #cc3366;
+	margin-left: 100px;
+	background-color: #0ee8e6;
+	padding: 3px 5px;
+	border: #0ee8e6 solid 4px;
+	border-radius: 90px;
+	}
+	
+nav a:hover, #submitOrder:hover, #careerSubmit:hover {
+   color: #cc3366;
+   background: #ffaaff;
+   border-radius: 90px;
+   }
+   
+header h1 {
+	color: #cc3366;
+	margin-top: 0px;
+	}
+	
+main p {
+	color: #0ee8e6; /*electric blue*/
+	text-shadow: 2px 2px 1px #860352;
+	font-weight: bold;
+	font-size: 125%;
+	margin-left: 150px;
+	}
+	
+.menuItem {
+	width: 30px;
+	text-align: right;
+	}
+	
+#submitOrder {
+	font-size: 16px;
+	font-weight: bold;
+	font-family: Verdana, sans-serif;
+	text-decoration: none;
+	color: #cc3366;
+	background-color: #0ee8e6;
+	padding: 3px 5px;
+	border: #0ee8e6 solid 4px;
+	border-radius: 90px;
+	
+	}
+	
+footer{
+	text-align: center;
+	width: 100%;
+	}
+	
+header h2 {
+	color: #CC3366;
+	font-size: 150%;
+	/*margin-top: -90px;
+	margin-bottom: 140px;*/
+	line-height: 500%;
+	}
+	
+table {
+	width: 50%;
+	margin: 20px auto 10px;
+	}
+	
+table td {
+	border-bottom: solid black 2px;
+	}
+
+table td.price {
+	color: #0ffffd;
+	font-size: 25px;
+	}	
+	
+table td.days {
+	color: #0ffffd;
+	font-size: 25px;
+	text-shadow: 1px 1px 3px #0099EE;
+	}	
+	
+#careersForm label {
+	float: left;
+	clear: left;
+	display: block;
+	text-align: right;
+	width: 200px;
+	padding-right: 10px;
+	font-size: 150%;
+	}
+
+#careersForm input {
+	display: block;
+	margin-top: 10px;
+	font-size: 130%;
+	size: 200;
+	}
+	
+#openings input, #openings label {
+	display: inline;
+	float: none;
+	}
+	
+#red {
+	color: red;
+	}
+	
+#submitButtons input{
+	margin-top: 30px;
+	display: inline;
+	}
+
+	
+	
+	
+	
+	
+	
+	
+	

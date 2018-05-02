@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Big Ben's Burgers: Menu v3</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="project4.css">
+	<script src="project4.js"></script>
+	
+</head>
+
+<body>
+<header id="menuPage">
+<h1>Big Ben's Burgers: Menu</h1>
+<!--<h2 style="color: #ffaaff;">Menu</h2>-->
+</header>
+
+<nav>
+    	<a href="index.html">Home</a>&nbsp;
+        <a href="#">Menu</a> &nbsp;
+        <a onclick="window.open('specials.html')">Specials</a>
+        <a href="aboutUs.html">About Us</a>
+        <a href="careers.html">Careers</a>
+        
+</nav>
+
+<main>
+	<table>
+	<form>
+		
+		<tr>
+			
+			<td class="images"><script>tableImage(0);</script></td>
+			<td class="description"><script>tableDesc(0);</script></td>
+			<td class="price"><script>prices(0);</script></td>	
+			<td><input class="menuItem" type="text" id="item0" value="0"></td>
+		</tr>
+			
+		<tr>
+			<td><script>tableImage(1);</script></td>
+			<td class="description"><script>tableDesc(1);</script></td>
+			<td class="price"><script>prices(1);</script></td>
+			<td><input type="text" class="menuItem" id="item1" value="0"></td>
+		</tr>
+		<tr>
+			<td><script>tableImage(2);</script></td>
+			<td class="description"><script>tableDesc(2);</script></td>
+			<td class="price"><script>prices(2);</script></td>
+			<td><input class="menuItem" type="text" id="item2" value="0"></td>
+		</tr>
+		<tr>
+			<td><script>tableImage(3);</script></td>
+			<td class="description"><script>tableDesc(3);</script></td>
+			<td class="price"><script>prices(3);</script></td>
+			<td><input class="menuItem" type="text" id="item3" value="0"></td>
+		</tr>
+		<tr>
+			<td><script>tableImage(4);</script></td>
+			<td class="description"><script>tableDesc(4);</script></td>
+			<td class="price"><script>prices(4);</script></td>
+			<td><input class="menuItem" type="text" id="item4" value="0"></td>
+		</tr>
+		<tr>
+			<td><script>tableImage(5);</script></td>
+			<td class="description"><script>tableDesc(5);</script></td>
+			<td class="price"><script>prices(5);</script></td>
+			<td><input class="menuItem" type="text" id="item5" value="0"></td>
+		</tr>
+		<tr>
+			<td colspan="4" style="border: 0px"><a type="submit" id="submitOrder" style="float: right" onclick="calculate()">Click to Order</a></td>
+		</tr>
+	</form>
+	</table>
+	
+	
+
+	
+
+</main>
+
+<footer>
+	<!--<img src="images/waitress.png" alt="winking waitress" width="200px" height="175px"> if I need this code later-->
+	<p><b><i style="color: black;">Copyright &copy; 2018 Jon-Mikel Pearson</i></b> PHONE: 512-555-1212     
+		ADDRESS: 1305 Sunset Blvd.     Austin, TX   78723</p>
+</footer>
+
+</body>
+<!--clears banner from home page -->
+<script> clearInterval(bannerImages);</script>
+</html>  
+

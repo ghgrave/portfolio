@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Big Ben's Burgers v4</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="project4.css">
+	<script src="project4.js"></script>
+	
+</head>
+
+<body>
+<header style="height: 200px; text-shadow: 2px 2px 6px #0ffffd">
+	<h1>CAREERS</h1>
+</header>
+
+<nav>
+    	<a href="index.html">Home</a>&nbsp;
+        <a href="menu.html">Menu</a> &nbsp;
+        <a onclick="window.open('specials.html')">Specials</a>
+        <a href="aboutUs.html">About Us</a>
+        <a href="#">Careers</a>
+</nav>
+
+<form name="careers" method="post" id="careersForm" style="margin-top: 30px">
+
+	<label for="fName"><span id="red">*</span> First Name:</label>
+	<input type="text" id="fName" required="required">
+	
+	<label for="lName"><span id="red">*</span> Last Name:</label>
+	<input type="text" id="lName" required="required">
+
+	<label for="address"><span id="red">*</span> Address:</label>
+	<input type="text" id="address" size="30" required="required">
+	
+	<label for="city"><span id="red">*</span> City:</label>
+	<input type="text" id="city" required="required">
+	
+	<label for="state"><span id="red">*</span> State:</label>
+	<select id="state" name="careerState" style="width: auto; font-size: 150%" required="required">
+			<option value=""></option>
+               <option value="AL">AL</option>
+               <option value="AK">AK</option>
+               <option value="AZ">AZ</option>
+               <option value="AR">AR</option>
+               <option value="CA">CA</option>
+               <option value="CO">CO</option>
+               <option value="CT">CT</option>
+               <option value="DE">DE</option>
+               <option value="DC">DC</option>
+               <option value="FL">FL</option>
+               <option value="GA">GA</option>
+               <option value="HI">HI</option>
+               <option value="ID">ID</option>
+               <option value="IL">IL</option>
+               <option value="IN">IN</option>
+               <option value="IA">IA</option>
+               <option value="KS">KS</option>
+               <option value="KY">KY</option>
+               <option value="LA">LA</option>
+               <option value="ME">ME</option>
+               <option value="MD">MD</option>
+               <option value="MA">MA</option>
+               <option value="MI">MI</option>
+               <option value="MN">MN</option>
+               <option value="MS">MS</option>
+               <option value="MO">MO</option>
+               <option value="MT">MT</option>
+               <option value="NE">NE</option>
+               <option value="NV">NV</option>
+               <option value="NH">NH</option>
+               <option value="NJ">NJ</option>
+               <option value="NM">NM</option>
+               <option value="NY">NY</option>
+               <option value="NC">NC</option>
+               <option value="ND">ND</option>
+               <option value="OH">OH</option>
+               <option value="OK">OK</option>
+               <option value="OR">OR</option>
+               <option value="PA">PA</option>
+               <option value="RI">RI</option>
+               <option value="SC">SC</option>
+               <option value="SD">SD</option>
+               <option value="TN">TN</option>
+               <option value="TX">TX</option>
+               <option value="UT">UT</option>
+               <option value="VT">VT</option>
+               <option value="VA">VA</option>
+               <option value="WA">WA</option>
+               <option value="WV">WV</option>
+               <option value="WI">WI</option>
+               <option value="WY">WY</option>
+            </select>
+	
+	<label for="zip"><span id="red">*</span> Zipcode:</label>
+	<input type="text" id="zip" size="10" maxlength="5" required="required">
+
+	
+	<label for="phone">Phone:</label>
+	<input type="tel" id="phone">
+	
+	<label for="email"><span id="red">*</span> Email:</label>
+	<input type="email" id="email" required="required">
+	<p style="color: red; margin-left: 200px; font-size: 20px"> * required <p>
+	
+	<p style="font-size: 30px; color: #0ee8e6; text-shadow: 1px 1px 3px #0ffffd">Position you are applying for (choose one):</p>
+	<div id="openings" style="text-align: center; margin: auto 300px">
+               <input id="server" name="position" type="radio" value="server" />
+               <label for="server">Server</label>
+               <input id="cook" name="position" type="radio" value="cook" />
+               <label for="cook">Cook</label>
+               <input id="dishwasher" name="position" type="radio" value="dishwasher" />
+               <label for="dishwasher">Dishwasher</label>
+               <input id="carhop" name="position" type="radio" value="carhop" />
+               <label for="carhop">Carhop</label>
+               <input id="sodajerk" name="position" type="radio" value="sodajerk" />
+               <label for="sodajerk">Sodajerk</label>
+               <input id="busser" name="position" type="radio" value="busser" />
+               <label for="busser">Busser</label>
+    </div>
+	
+	
+		
+	<div id="submitButtons" style="text-align: center">
+		<input type="submit" id="careerSubmit" value="Apply now" >
+		<input type="reset" id="careerSubmit">
+	</div>
+</form>
+
+<!--clears banner from home page -->
+<script> clearInterval(bannerImages);</script>
+</body>
