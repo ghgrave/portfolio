@@ -194,7 +194,7 @@ function resetEligibleResults(){
 // REQUESTS page
 $(document).ready(function(){
     $("#emergency").click(function(event){
-        alert("Please call the following number and someone will get back to you as soon as possible: 512-111-1122");
+        alert("Please call the following number and someone will get back to you as soon as possible: 512.398.3100");
 
     });//closes click function id=emergency
 });//closes function
