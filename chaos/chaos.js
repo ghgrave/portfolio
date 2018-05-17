@@ -1,3 +1,5 @@
+// COPYRIGHT: gHgrave Designs may 2018
+
 // Google maps function
 function myMap() {
     var mapProp= {
