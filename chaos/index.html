@@ -9,7 +9,7 @@
         <title>Children of Chaos</title>
         <meta name="description" content="Free web page of the local Austin Texas chapter of Children of Chaos that caters to those in Alcoholics
             Anonymous who consider themselves to be agnostic, atheist, or free thinker who want to participate in AA but do not necessarily 
-            believe in God or any other religion while being sensitive to LGBTQIA community.">
+            believe in God or any other religion while being sensitive to the lesbian gay bisexual transgender questioning community.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Latest jQuery -->
@@ -31,6 +31,7 @@
         <link href="https://fonts.googleapis.com/css?family=Spectral:400,400i,700,700i,800,800i" rel="stylesheet">
 
         <link rel="stylesheet" href="chaos.css">
+        <script src="chaos.js"></script>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -56,7 +57,7 @@
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav navbar-left">
                             <!-- <li><a href="#whoRow">Who we are <span class="sr-only">(current)</span></a></li> -->
-                            <li><a href="#events">What is going on</a></li>
+                            <!-- <li><a href="#events">What is going on</a></li> -->
                             <li><a href="#schedule">Schedule/Directions</a></li>
                             <!-- <li><a href="#directions">Directions</a></li> -->
                             <li><a href="#resources__title-container">Resources</a></li>
@@ -75,7 +76,7 @@
 
             <!-- start text rows for bootstrap -->
             <div class="row" id="whoRow">
-                <div class="col-sm-4">
+                <div class="col-sm-3">
                     <div class="div1 text-justify" id="index-left-col">
                         <h1 class="text-center text-uppercase shadow" id="who">Who we are</h1>
                         <p>Children of Chaos is a Alcoholics Anonymous free-thinking group that is open to each individual’s 
@@ -85,8 +86,33 @@
                         <p>The only entry fee to Alcoholics Anonymous is simply the desire to stop drinking and you are a member if you say you are.</p>
                     </div>
                 </div>
-                <div class="col-sm-4">
-                    <div class="div1 div2 text-justify" id="index-center-col">
+
+                <!-- starts blog row -->
+                
+                    <div class="col-sm-6">
+                        <div class="text-center" id="blog-row__div">
+                            <p>Placeholder - this is the spot where we can put events or a blog, or images</p>
+                        </div>
+                    </div>
+                <!-- ends blog row -->
+                
+
+                <div class="col-sm-3">
+                    <div class="div1 div3 text-justify" id="index-right-col">
+                        <h1 class="text-center text-uppercase shadow">All are welcome</h1>
+                        <p>No matter how far down the scale you have gone, you will see how your experience can benefit others 
+                            and you will hear the Experience, Strength and Hope of others in recovery.</p>
+                        <p>Join our meeting, which is open to all, whether you belong to the LGBT+ community or are an Ally, and feel welcomed.</p>
+                        <p>You are allowed to respectfully and freely express your beliefs with like-minded people and enjoy sobriety, 
+                            whether you’re a newcomer, old-timer or anywhere in between.</p>
+                    </div>
+                </div>
+            <!-- ends text row -->
+            </div>
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="div2__2 text-justify" id="index-center-col__2">
                         <h1 class="text-center text-uppercase shadow" id="what">What do you believe</h1>
                         <div>
                             <ul>
@@ -98,28 +124,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-4">
-                    <div class="div1 div3 text-justify" id="index-right-col">
-                        <h1 class="text-center text-uppercase shadow">All are welcome</h1>
-                        <p>No matter how far down the scale you have gone, you will see how your experience can benefit others 
-                            and you will hear the Experience, Strength and Hope of others in recovery.</p>
-                        <p>Join our meeting, whichis open to all, whether you belong to the LGBT+ community or are an Ally, and feel welcomed.</p>
-                        <p>You are allowed to respectfully and freely express your beliefs with like-minded people and enjoy sobriety, 
-                            whether you’re a newcomer, old-timer or anywhere in between.</p>
-                    </div>
-                </div>
-            <!-- ends text row -->
-            </div>
+            </div> 
 
-            <!-- starts blog row -->
-            <div class="row" id="events">
-                <div class="col-sm-12" >
-                    <div class="text-center" id="blog-row__div">
-                        <p>Placeholder - this is the spot where we can put events or a blog, or images</p>
-                    </div>
-                </div>
-            <!-- ends blog row -->
-            </div>
 
             <!-- resource image row -->
             <div class="row" id="schedule">
@@ -134,7 +140,6 @@
             <div class="row" >
                 <!-- start table -->
                 <div class="col-sm-6" >
-                    <!-- <h3 class="text-center shadow" >Children of Chaos is here for you and meets at noon Monday through Friday</h3> -->
                     <div class="row table-container" >
                         <table class="text-center">
                             <h3 class="text-center shadow" >Children of Chaos is here for you and meets at noon Monday through Friday</h3>
@@ -154,7 +159,7 @@
                                 <td>Tuesday</td>
                                 <td>12:00 pm</td>
                                 <td>Galano Club House @ Coffee Bar</td>
-                                <td>Literature<br>2nd Tues/month - Speaker</td>
+                                <td>Literature</td>
                             </tr>
                             <tr>
                                 <td>Wednesday</td>
@@ -172,7 +177,7 @@
                                 <td>Friday</td>
                                 <td>12:00 pm</td>
                                 <td>Galano Club House @ Coffee Bar</td>
-                                <td>Open Discussion</td>
+                                <td>Open Discussion<br>2nd Fri/month - Speaker</td>
                             </tr>
                         </table>
                     </div>
@@ -185,7 +190,7 @@
                         <p class="text-center">Address: &emsp;6809 Guadalupe St &emsp;Austin, TX &emsp;78752</p>
                     </h3>
                     <div id="mapImage">
-                        <!-- text/image? -->
+                        <div id="mapLocation"></div>
                     </div>
                 </div>
             </div>
@@ -205,6 +210,18 @@
                     <div class="div4 text-uppercase text-center">
                         <h1 class="shadow">AA literature</h1>
                         <ul>
+                            <li><a href="https://www.alcoholics-anonymous.org.uk/download/1/Library/Documents/Literature%20Downloads/3267%20The%20God%20Word.pdf" target="_blank" class="lit-links">The God Word</a> 
+                                <p class="resource-description">Downloadable .pdf of the God Word pamphlet.</p>
+                            </li>
+                            <li><a href="https://aa-netherlands.org/big-book-online/" target="_blank" class="lit-links">Big Book On-line</a> 
+                                <p class="resource-description">AA Netherlands online PDF links for all chapters of the Big Book 4th Ed.</p>
+                            </li>
+                            <li><a href="https://www.aa.org/assets/en_US/en_bigbook_personalstories_partI.pdf" target="_blank" class="lit-links">Big Book Part-I</a> 
+                                <p class="resource-description">Downloadable .pdf of pages 170-276 of the Big Book 4th Ed.</p>
+                            </li>
+                            <li><a href="https://www.aa.org/assets/en_US/en_bigbook_personalstories_partII.pdf" target="_blank" class="lit-links">Big Book Part-II</a> 
+                                <p class="resource-description">Downloadable .pdf of pages 277-431 of the Big Book 4th Ed.</p>
+                            </li>
                             <li>
                                 <a href="https://b2c.aaws.org/p-42-alcoholics-anonymous-hard-cover.aspx" target="_blank">
                                     <img src="assets/resources/bigBook.jpg" alt="big book of aa" class="resource-image"></a>
@@ -222,12 +239,6 @@
                                 <p class="resource-description">This practical 90-page booklet demonstrates through simple example how A.A. 
                                     members throughout the world live and stay sober one day at a time.</p>
                             </li>
-                            <li><a href="https://www.alcoholics-anonymous.org.uk/download/1/Library/Documents/Literature%20Downloads/3267%20The%20God%20Word.pdf" target="_blank" class="lit-links">The God Word</a> 
-                                <p class="resource-description">Downloadable .pdf of the God Word pamphlet.</p>
-                            </li>
-                            <li><img src="assets/puppy.jpg" alt="" class="resource-image">
-                                <p class="resource-description">Description of book or pamphlet</p>
-                            </li>
                         </ul>
                     </div>
                 </div>
@@ -235,25 +246,26 @@
                 <!-- non-traditional AA resources -->
                 <div class="col-sm-4">
                     <div class="div4 div5 text-uppercase text-center">
-                        <h1 class="shadow">Outside literature</h1>
+                        <h1 class="shadow">Alternative literature</h1>
                         <ul>
                             <li>
-                                <a href="https://www.amazon.com/gp/product/0994016239/ref=as_li_tl?ie=UTF8&tag=aabeyondbelie-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=0994016239&linkId=a9a0982597bb28deefb6d2e1c3967d5e" target="_blank">
+                                <a href="https://aaagnostica.org/do-tell-stories-by-atheists-and-agnostics-in-aa/" target="_blank">
                                     <img src="assets/resources/doTell.jpg" alt="Do Tell book of AA" class="resource-image"></a>
                                 <p class="resource-description">This book contains thirty stories by atheists and agnostics who tell us “what it was like, 
                                     what happened and what it’s like now” as they made their way to a life of long-term sobriety within the rooms of Alcoholics Anonymous.</p>
                             </li>
-                            <li><a href="https://www.alcoholics-anonymous.org.uk/download/1/Library/Documents/Literature%20Downloads/3268%20LGBT%20Voices.pdf" class="lit-links">LGBT Voices in AA</a> 
+                            <li><a href="https://www.alcoholics-anonymous.org.uk/download/1/Library/Documents/Literature%20Downloads/3268%20LGBT%20Voices.pdf" target="_blank" class="lit-links">LGBT Voices in AA</a> 
                                 <p class="resource-description">LGBT members' personal experiences in AA</p>
                             </li>
-                            <li><a href="#" class="lit-links">Link</a> 
-                                <p class="resource-description">Description of book or pamphlet</p>
+                            <li><a href="http://aaagnostica.org/wp-content/uploads/2012/07/A-Collection-of-Alternative-Steps-2012-07-09.pdf" target="_blank" class="lit-links">Alternative 12-Steps</a> 
+                                <p class="resource-description">PDF collection of alternative 12 Steps with varying verbiage for those looking for a different approach.</p>
                             </li>
-                            <li><a href="#" class="lit-links">Link</a> 
-                                <p class="resource-description">Description of book or pamphlet</p>
+                            <li><a href="https://www.aa.org/assets/en_US/p-15_Q&AonSpon.pdf" target="_blank"  class="lit-links">Questions & Answers on Sponsorship</a> 
+                                <p class="resource-description">Whether you are a newcomer who is hesitant about “bothering” anyone, or a member who has been around for some time trying to go it alone, 
+                                        sponsorship is yours for the asking.</p>
                             </li>
-                            <li><a href="#" class="lit-links">Link</a> 
-                                <p class="resource-description">Description of book or pamphlet</p>
+                            <li><a href="grapevine.html" target="_blank" class="lit-links">An Austin Atheist Tells His Story...</a> 
+                                <p class="resource-description">One of the founders of the Children of Chaos has his works published in the October 2012 Grapevine</p>
                             </li>
                             
                         </ul>
@@ -270,21 +282,27 @@
                                     assure suffering alcoholics that they can find sobriety in A.A. without having to accept anyone else’s beliefs 
                                     or having to deny their own.</p>
                             </li>
-                            <li><a href="https://aaagnostica.org" class="lit-links">AA Agnostica</a> 
+                            <li><a href="https://aaagnostica.org" target="_blank" class="lit-links">AA Agnostica</a> 
                                 <p class="resource-description">AA Agnostica is meant to be a helping hand for the alcoholic who reaches out to Alcoholics 
                                     Anonymous for help and finds that she or he is disturbed by the religious content of many AA meetings.</p>
                             </li>
                             <li><a href="http://www.aa.org" target="_blank" class="lit-links">Alcoholics Anonymous</a> 
                                 <p class="resource-description">This is the home page for AA with resources for all over the world</p>
                             </li>
-                            <li><a href="#" class="lit-links">Link</a> 
-                                <p class="resource-description">Description of book or pamphlet</p>
+                            <li><a href="https://www.addiction.com/3490/agnostic-12-step-program/" target="_blank" class="lit-links">Addiction.com</a> 
+                                <p class="resource-description">Do You Need An Agnostic 12 Step Program?</p>
                             </li>
-                            <li><img src="assets/puppy.jpg" alt="" class="resource-image">
-                                <p class="resource-description">Description of book or pamphlet</p>
+                            <li><a href="https://www.smartrecovery.org/about-us/" target="_blank" class="lit-links">SMART Recovery</a> 
+                                <p class="resource-description">SMART Recovery is an abstinence-based, not-for-profit organization with a sensible self-help program for 
+                                    people having problems with drinking and using. It includes many ideas and techniques to help you change your life from one that is 
+                                    self-destructive and unhappy to one that is constructive and satisfying.
+                                </p>
                             </li>
-                            <li><a href="#" class="lit-links">Link</a> 
-                                <p class="resource-description">Description of book or pamphlet</p>
+                            <li><a href="http://www.freethinkersinaa.org" target="_blank" class="lit-links">Freethinkers in AA</a> 
+                                <p class="resource-description">“Freethinker” encompasses the variety of beliefs and non-beliefs held by individual members. Recovering 
+                                    alcoholics who attend secular and freethinker A.A. meetings come together knowing that sobriety can be attained by anyone with the 
+                                    help of A.A. fellowship and principles, without necessarily relying on a god or even a “Higher Power.”
+                                </p>
                             </li>
                         </ul>
                     </div>
@@ -307,7 +325,7 @@
                     <div class="col-sm-9" id="footer-text">
                         <ul>
                             <!-- <li><a href="#index-left-col">Who we are <span class="sr-only">(current)</span></a></li> -->
-                            <li><a href="#events">What is going on</a></li>
+                            <!-- <li><a href="#events">What is going on</a></li> -->
                             <li><a href="#schedule">Schedule/Directions</a></li>
                             <li><a href="#resources__title-container">Resources</a></li>
                         </ul>
@@ -318,6 +336,9 @@
         </div> 
     </body>
     
-
+    <!-- Google Map script -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB5PaHpLi6Hv4DD3lCazh_JZvQGhe3Nm78&callback=myMap"></script>
+    
+    
 
 </html>

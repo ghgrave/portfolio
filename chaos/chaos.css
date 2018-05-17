@@ -104,10 +104,10 @@ div li::first-letter {
     font-size: 120%;
 }
 
-#index-left-col,
+/* #index-left-col,
 #index-right-col {
     padding-top: 100px;
-}
+} */
 
 #index-center-col { /*middle row - column text*/
     padding-bottom: 100px;
@@ -116,8 +116,9 @@ div li::first-letter {
 /* blog styles */
 #blog-row__div {
     border: 10px double #3D6094;
-    margin-top: 90px;
+    margin-top: 45px;
     font-size: 4em;
+    min-height: 528px;
 }
 
 /* table styles */
@@ -268,4 +269,16 @@ footer li a:hover {
 
 .div4 a:hover {
     color: #800404;
+}
+
+/* NOTE:Grapevine Article grapevine.html*/
+#grapevine {
+    border: 10px ridge #3D6094;
+    width: 85%;
+    margin: 5px auto;
+    padding: 16px;
+}
+
+#mapLocation {
+    height: 100%;
 }
