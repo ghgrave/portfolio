@@ -26,7 +26,7 @@ body {
 }
 
 .shadow {
-    text-shadow: 2px 2px 3px #3D6094; /*medium blue gray*/
+    text-shadow: 2px 2px 3px white;
 }
 
 
@@ -115,13 +115,37 @@ div li::first-letter {
     padding-bottom: 100px;
 }
 
+
+#scroll {
+    font-size: 75%;
+}
+
+
+#scroll::first-letter  {
+    color: #1B2125; /*dark gray*/
+    font-size: 100%;
+}
+
 /* blog styles */
 #blog-row__div {
     border: 10px double #3D6094;
-    margin-top: 45px;
-    font-size: 4em;
+    margin-top: 4px;
     min-height: 528px;
+    max-height: 528px;
+    text-align: justify;
+    padding: 10px;
+    overflow: scroll;
 }
+
+.d_o_w {
+    color: #242292;
+    text-transform: uppercase;
+}
+
+#blog-row__div p {
+    font-size: 1.5em;
+}
+
 
 /* table styles */
 .table-container {
@@ -129,6 +153,7 @@ div li::first-letter {
     width: 100%;
     margin: 16px auto;
     padding: 16px;
+    font-size: 1vw;
 }
 
 table {
@@ -214,7 +239,7 @@ footer li a:hover {
 }
 
 #resources__title {
-    font-size: 400%;
+    font-size: 7vw; /* allows for better scaling on phones */
 }
 
 /* resource divs */
