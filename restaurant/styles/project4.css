@@ -1,16 +1,17 @@
-/*color palette:
-	#958F94 - grey
-	#CC3366 - dark pink
-	#EE5428 - orange
-	#0099EE - Miami blue
-	#10253A - dark blue
-	#536b38 - olive green
-	#AA5511 - tan
-	#ffaaff - pink
-	#860352 - dark red
-*/
+#palette {
+	color: #958F94; /* - grey; */
+	color: #CC3366; /* - dark pink; */
+	color: #EE5428; /* - orange; */
+	color: #0099EE; /* - Miami blue; */
+	color: #10253A; /* - dark blue; */
+	color: #536b38; /* - olive green; */
+	color: #AA5511; /* - tan; */
+	color: #ffaaff; /* - pink; */
+	color: #860352; /*  - dark red*/
+}
 
-header { /*background-color: #cc3366;*/
+
+header { 
 	color: #CC3366;
 	border: 5px double #0ee8e6;
 	font-family: Verdana, sans-serif;
@@ -19,7 +20,7 @@ header { /*background-color: #cc3366;*/
 	text-shadow: 1px 1px 3px #0099EE;
 	margin: 0px 100px 10px 100px;
 	height: 450px;
-	background-image: url(images/dinerImage.jpg);
+	background-image: url(../images/dinerImage.jpg);
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	border-radius: 90px 90px 0 0;
@@ -167,16 +168,7 @@ table td.days {
 	color: red;
 	}
 	
-#submitButtons input{
+#submitButtons input {
 	margin-top: 30px;
 	display: inline;
 	}
-
-	
-	
-	
-	
-	
-	
-	
-	
