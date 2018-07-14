@@ -1,0 +1,90 @@
+/* body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  color: darkred;
+  font-size: 4em;
+  font-weight: bold;
+}
+
+a {
+  color: #00B7FF;
+} */
+
+/* Styles go here */
+
+#container{
+  width: 400px; /*creates 300 pixels width*/
+  margin: 100px auto;
+  border-width: 2px;
+  border-style: solid;
+  border-color: gray;
+}
+
+.completed {
+  color: red;
+  text-decoration: line-through;
+}
+
+h1 {
+background: #2980b9;
+color: white;
+margin: 0;
+padding: 10px 20px 10px 20px; /*top, right, bottom, left sides*/
+text-transform: uppercase;
+font-size: 24px;
+font-weight: normal;/*normal is 5 and can be up to 900*/
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+font-family: Roboto;
+}
+
+li {
+line-height: 40px;
+background: white;
+padding: 10px;
+}
+
+li:nth-child(2n){
+background: #dddddd;
+}
+
+input {
+background-color: #f7f7f7;
+width: 100%;
+padding: 13px 13px 13px 20px;
+color: #2980b9;
+font-size: 18px;
+box-sizing: border-box; /*automatically sizes input box to fit width*/
+}
+
+input:focus {
+background-color: white;
+border: 3px solid red;
+outline: none;
+}
+
+span {
+background: red;
+color: white;
+height: 40px;
+margin: 0 0 0 20px;
+opacity: 0;/*no color*/
+padding: 3px 15px 3px 15px;
+float: right;
+box-sizing: border-box;
+transition: 0.3s linear;
+}
+
+li:hover span{ /*when I hover over X it will "turn on"*/
+opacity: 1;
+}
