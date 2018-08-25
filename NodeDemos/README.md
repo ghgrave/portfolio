@@ -2,4 +2,4 @@
 
 ### index.js
 
->> Node project that demonstrates building a Node API from scratch
+   Node project that demonstrates building a Node API from scratch
