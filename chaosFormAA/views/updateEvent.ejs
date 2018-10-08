@@ -1,0 +1,88 @@
+<% include partials/header.ejs %>
+
+    <body id='updateForm'>
+
+        <!-- image and log containers -->
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <img src="/logoTest.jpg" alt="aa logo" id="chaosLogo">
+            </div>
+        </div>
+
+        <div id='updateForm_directions'>
+            <h4>1) Verify information is correct</h4>
+            <h4>2) Make changes (as needed)</h4>
+            <h4>3) Click APPROVED button if info is accurate or</h4>
+            <h4>4) Click  NOT APPROVED button and contact submitter to re-submit event</h4>
+        </div>
+        
+        <% data.forEach((data) => { %>
+        
+            <form class="text-center form_container" id="eventFormSubmit" action="/updateData/<%= data._id %>" method="POST">
+                <!-- input for date -->
+                <div class="form-group">
+                    <p id="dateError"></p>
+                    <label for="date">Date of Event</label>
+                    <input type="text" class="form-control" id="date" name="date" 
+                    value="<%= data.date%>" maxlength="10" required>
+                </div>
+                
+                <!-- input for event title -->
+                <div class="form-group">
+                    <label for="event_title">Title of Event</label>
+                    <input type="text" class="form-control" id="event_title" name="event_title" 
+                    value="<%= data.event_title %>" maxlength="50" required>
+                </div>
+
+                <!-- input for event description-->
+                <div class="form-group">
+                    <label for="event_desc">Description of Event</label>
+                    <textarea class="form-control" id="event_desc" name="event_desc" rows="3" 
+                     maxlength="750" required><%= data.event_desc %></textarea>
+                </div>
+
+                <!-- input for event contact name -->
+                <div class="form-group">
+                    <label for="contact_name">Name of Event Contact</label>
+                    <input type="text" class="form-control" id="contact_name" name="contact_name"
+                    value="<%= data.contact_name%>">
+                </div>
+
+                <!-- input for event contact number -->
+                <div class="form-group">
+                    <label for="contact_info">Info of Event Contact</label>
+                    
+                    <input type="text" class="form-control" id="contact_info" name="contact_info"
+                    value="<%= data.contact_info%>">
+                </div>
+
+                <!-- input for submission contact name -->
+                <div class="form-group">
+                    <label for="sub_contact_name">Who Submitted</label>
+                    <input type="text" class="form-control" id="sub_contact_name" name="sub_contact_name"
+                    value="<%= data.sub_contact_name%>" required>
+                </div>
+
+                <!-- input for submission contact name -->
+                <div class="form-group">
+                    <label for="sub_contact_info">Submitters Contact Info</label>
+                    <input type="text" class="form-control" id="sub_contact_info" name="sub_contact_info"
+                    value="<%= data.sub_contact_info%>">
+                </div>
+
+                <!-- input for approval -->
+                <div class="form-group">
+                    <label for="approval">Is the event approved?</label>
+                    <select class="form-control text-center text-uppercase contact_info" name="approval">
+                        <option>APPROVED</option>
+                        <option>NOT APPROVED</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn btn-success">submit</button>
+                
+            </form> 
+        <% }); %>
+    </body>
+
+    <!-- -->

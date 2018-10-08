@@ -1,0 +1,11 @@
+<% include partials/header.ejs %>
+
+    <body>
+        <h1>The following events need to be approved:</h1>
+        <% let count = 0; %>
+        <% data.forEach((data) => { %>
+            <% count ++ %>
+            <h3><%= count %>. <a href="/updateEvent/<%= data._id%>"><%= data.event_title %></a></h3>
+            <br>
+        <% }); %>
+    </body>
