@@ -88,6 +88,7 @@ $(document).ready(function(){
     });
 });
 
+// opens up a new page with larger version of the floor plans
 $(document).ready(function () {
     $("img").click(function(){
         var newPdf = document.getElementById("newImagePos");
