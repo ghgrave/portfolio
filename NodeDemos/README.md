@@ -1,5 +1,5 @@
 # Node Demos
 
-### index.js
+### InClass
 
-   Node project that demonstrates building a Node API from scratch
+   Node project that demonstrates building a Node API from scratch using ToDo App from trial class. 
